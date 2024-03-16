@@ -329,6 +329,10 @@ img {
   object-fit: cover;
   border-radius: 20px;
 }
+.thumbnail .item img:hover {
+  transform: translateX(0.25rem);
+}
+
 .thumbnail .item .content{
   color: #ffffff;
   position: absolute;
@@ -338,6 +342,9 @@ img {
 }
 .thumbnail .item .content .title{
   font-weight: 500;
+}
+.thumbnail .item .content .title:hover {
+  transform: translateX(0.25rem);
 }
 .thumbnail .item .content .description{
   font-weight: 300;
