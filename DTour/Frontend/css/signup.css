@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Poppins:wght@400;500&display=swap");
+
+:root{
+    --body-font: "Poppins", sans-serif;
+    --second-font: "Montserrat", sans-serif;
+    --primary-color: #3498db;
+    --primary-color2: #1d3342;
+    --secondary-color: #f39c12;
+    --background-color: #f9f9f9;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--body-font);
+    background-image: url('../img/signup_img.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    max-width: 50%;
+    height: 90vh;
+    background-color: rgba(202, 188, 208, 0.7); /* Transparent white color */
+    backdrop-filter: blur(1px); /* Apply a blur effect */
+    background-size: 600% 600%; /* Background size for the gradient animation */
+    animation: gradientAnimation 10s ease infinite; /* Gradient animation */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin-left: 0px;
+    overflow: hidden;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+}
+
+.container:hover{
+    opacity: 0.9; /* Change opacity to fully visible on hover */
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add a subtle shadow effect on hover */
+}
+        
+        .topheading {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            padding: 0 20px; /* Add padding to separate from the edges */
+            padding-left: 50px;
+        }
+        
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            padding-left: 50px;
+        }
+        
+        .logo img {
+            margin-right: 10px;
+            max-height: 30px;
+        }
+        
+        .login {
+            font-size: 16px;
+            font-family: var(--second-font);
+            font-weight: bold;
+            margin-left: auto; /* Align to the right */
+            padding-right: 50px; /* Add padding to separate from the edges */
+        }
+        
+        h5 {
+            margin-top: 30px;
+            font-size: 36px;
+            margin-bottom: 50px;
+            font-family: 'Montserrat', sans-serif; /* Use the Montserrat font for a modern look */
+            color: #1a162c; /* Use a dark gray color for readability */
+            text-align: center; /* Center the text for a balanced layout */
+        }
+        
+        
+        h2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            position: relative;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: var(--body-font);
+          }
+          
+          h2 p {
+            margin: 0 10px;
+          }
+          
+          .line {
+            border-top: 1px solid #ccc;
+            height: 9px;
+            width: 50%;
+            margin: 0 10px;
+          }
+          
+          .line:first-child {
+            margin-left: 0;
+          }
+          
+          .line:last-child {
+            margin-right: 0;
+          }
+        
+        .first-last-names {
+            align-items: center;
+            margin-bottom: 10px;
+            display: flex;
+            width: 104%;
+            justify-content: space-between;
+            box-sizing: border-box;
+            
+        }
+        
+        .first-last-names input[type="text"] {
+            flex: 1;
+            margin-right: 25px;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            font-family: var(--second-font);
+            font-size: 16px;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        .first-last-names input[type="text"] #last-name {
+            flex: 1;
+            width: calc(60% - 10px); /* Set the width for the last name input */
+            padding-right: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+            font-family: var(--second-font);
+            font-size: 16px;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        .ri-google-line {
+            font-size: 20px;
+            color: #DB4437; /* Google's red color */
+        }
+        .google-signup {
+            background-color: var(--primary-color2);
+            color: #fff;
+            border: none;
+            padding: 10px 175px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-family: var(--second-font);
+            font-size: 16px;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+        
+        .google-signup:hover {
+            background-color: #0056b3;
+        }
+        
+
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            max-width: 100%;
+            padding: 10px;
+            border: 1px solid #c5c0c0;
+            margin-bottom: 20px;
+            font-family: var(--second-font);
+            box-sizing: border-box;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .first-last-names-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+          }
+          
+          .first-last-names-container label {
+            flex-basis: calc(49% - 4px);
+          }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 14px;
+            font-weight: bold;
+            font-family: var(--second-font);
+          }
+        label p {
+            display: block;
+            font-size: 14px;
+            margin-bottom: 10px;
+            font-family: var(--second-font);
+        }
+        
+        button[type="submit"] {
+            background-color: var(--primary-color2);
+            color: #fff;
+            border: none;
+            padding: 10px 200px;
+            cursor: pointer;
+            font-weight: bold;
+            margin-bottom: 20px;
+            font-family: var(--second-font);
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+        

@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container_i {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items at the start (top) of the flex container */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+  }
+  
+  .main__title {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+  }
